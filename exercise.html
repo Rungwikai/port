@@ -7,8 +7,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
     
-    <style>
-        /* CSS หลัก (เหมือนหน้า Home เพื่อคุมโทน) */
+    <style>       
         body {
             font-family: 'Sarabun', sans-serif;
             margin: 0;
@@ -41,16 +40,16 @@
             padding-bottom: 10px;
         }
 
-        /* --- ส่วนที่เพิ่มมาเฉพาะหน้า Exercise --- */
+       
         .exercise-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
-            gap: 15px; /* ระยะห่างระหว่างกล่อง */
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px; 
             margin-top: 20px;
         }
 
         .exercise-box {
-            display: block; /* ให้ลิงก์เป็นก้อนสี่เหลี่ยม */
+            display: block;
             padding: 20px;
             background-color: #ffffff;
             border: 1px solid #ddd;
@@ -63,14 +62,14 @@
         }
 
         .exercise-box:hover {
-            background-color: #e3f2fd; /* สีฟ้าอ่อนเมื่อชี้ */
+            background-color: #e3f2fd; 
             border-color: #007bff;
-            transform: translateY(-3px); /* ขยับขึ้นนิดนึงให้ดูมีมิติ */
+            transform: translateY(-3px); 
         }
         
         .icon { font-size: 1.5em; display: block; margin-bottom: 5px; }
 
-        /* --- ส่วนเมนูขวา --- */
+        
         .menu-list {
             display: flex;
             flex-direction: column;

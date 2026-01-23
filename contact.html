@@ -7,8 +7,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
     
-    <style>
-        /* CSS หลัก (Theme เดิม) */
+    <style>       
         body {
             font-family: 'Sarabun', sans-serif;
             margin: 0;
@@ -41,7 +40,7 @@
             padding-bottom: 10px;
         }
 
-        /* --- ส่วน CSS เฉพาะหน้า Contact --- */
+        
         .contact-info {
             background-color: #e9ecef;
             padding: 15px;
@@ -56,7 +55,7 @@
         }
         .contact-item span { margin-right: 10px; font-size: 1.3em; }
 
-        /* ตกแต่งฟอร์ม (Form Styles) */
+        
         form {
             display: flex;
             flex-direction: column;
@@ -64,18 +63,18 @@
         label { margin-top: 10px; font-weight: bold; color: #555; }
         
         input, textarea {
-            width: 100%; /* ให้กว้างเต็มกล่อง */
+            width: 100%; 
             padding: 10px;
             margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-family: 'Sarabun', sans-serif;
-            box-sizing: border-box; /* สำคัญ: ป้องกัน padding ดันกล่องพัง */
+            box-sizing: border-box; 
         }
         
         input:focus, textarea:focus {
             outline: none;
-            border-color: #007bff; /* เปลี่ยนสีขอบเมื่อพิมพ์ */
+            border-color: #007bff; 
             box-shadow: 0 0 5px rgba(0,123,255,0.3);
         }
 
@@ -94,7 +93,7 @@
             background-color: #0056b3;
         }
 
-        /* --- ส่วนเมนูขวา --- */
+        
         .menu-list {
             display: flex;
             flex-direction: column;
@@ -125,18 +124,19 @@
     <div class="container">
 
         <div class="main-content">
-            <h1>📞 Contact (ติดต่อฉัน)</h1>
+            <h1>📞 Contact (ติดต่อฉัน)</h1>           
             <hr>
 
-            <div class="contact-info">
+            <div class="contact-info">               
                 <div class="contact-item">
                     <span>📧</span> Rungwikai3125@email.com
                 </div>
                 <div class="contact-item">
-                    <span>📱</span> 097-360-0600
+                    <span>📱</span> 097-360-600
                 </div>
                 <div class="contact-item">
                     <span>💬</span> Line ID: 095-257-7890
+                
                 </div>
             </div>
 
@@ -145,7 +145,7 @@
                 <input type="text" id="name" name="name" placeholder="ระบุชื่อของคุณ" required>
 
                 <label for="email">อีเมลติดต่อกลับ:</label>
-                <input type="email" id="email" name="email" placeholder="ระบุEmailของคุณ" required>
+                <input type="email" id="email" name="email" placeholder="ใส่Emailของคุณ" required>
 
                 <label for="message">ข้อความ:</label>
                 <textarea id="message" name="message" rows="5" placeholder="พิมพ์ข้อความที่ต้องการติดต่อ..." required></textarea>

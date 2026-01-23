@@ -7,8 +7,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
     
-    <style>
-        /* --- ตั้งค่าฟอนต์หลักทั้งหน้า --- */
+    <style>       
         body {
             font-family: 'Sarabun', sans-serif;
             margin: 0;
@@ -34,27 +33,24 @@
             border-left: 1px solid #ddd; 
         }      
         
-        /* จัดรูปภาพ */
+        
         img {
             max-width: 200px; 
             border-radius: 10px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* เพิ่มเงาให้รูปนิดนึง */
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
             margin-bottom: 10px;
         }        
-
-        /* --- ปรับแต่งฟอนต์เมนูขวา (ตามที่ขอ) --- */
-        
-        /* 1. หัวข้อ "เมนูหลัก" */
+       
         .right-sidebar h3 {
             font-family: 'Sarabun', sans-serif;
-            font-size: 1.1rem;      /* ขนาดกำลังดี */
-            font-weight: 700;       /* ตัวหนา */
+            font-size: 1.1rem;      
+            font-weight: 700;       
             color: #000;
             margin-top: 0;
             margin-bottom: 15px;
-            display: flex;          /* จัดไอคอนให้อยู่แนวเดียวกับตัวหนังสือ */
+            display: flex;          
             align-items: center;
-            gap: 8px;               /* ระยะห่างไอคอน */
+            gap: 8px;               
         }
 
         .menu-list {
@@ -63,9 +59,9 @@
             gap: 10px;
         }
 
-        /* 2. ลิงก์เมนู */
+        
         .menu-list a {
-            font-family: 'Sarabun', sans-serif; /* บังคับใช้ฟอนต์ Sarabun */
+            font-family: 'Sarabun', sans-serif; 
             font-size: 1rem;
             text-decoration: none; 
             color: #333;
@@ -75,10 +71,10 @@
             border-radius: 5px;
             transition: 0.3s;
             
-            /* จัดไอคอนหน้าเมนู */
+            
             display: flex;
             align-items: center; 
-            gap: 10px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+            gap: 10px; 
         }
 
         .menu-list a:hover {
@@ -88,7 +84,7 @@
             border-color: #0056b3;
         }
 
-        /* เพิ่ม Class active สำหรับปุ่ม Home (เพราะหน้านี้คือหน้า Home) */
+        
         .menu-list a.active {
             background-color: #007bff;
             color: white;
