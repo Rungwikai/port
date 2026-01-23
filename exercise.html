@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - แบบฝึกหัดของเท็น</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS หลัก (เหมือนหน้า Home เพื่อคุมโทน) */
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5; 
+        }    
+        .container {
+            display: flex;       
+            max-width: 1000px;   
+            margin: 0 auto;      
+            background-color: white; 
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }      
+        .main-content {
+            flex: 3;             
+            padding: 30px;
+        }     
+        .right-sidebar {
+            flex: 1;             
+            background-color: #f8f9fa; 
+            padding: 20px;
+            border-left: 1px solid #ddd; 
+        }      
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #007bff;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        /* --- ส่วนที่เพิ่มมาเฉพาะหน้า Exercise --- */
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+            gap: 15px; /* ระยะห่างระหว่างกล่อง */
+            margin-top: 20px;
+        }
+
+        .exercise-box {
+            display: block; /* ให้ลิงก์เป็นก้อนสี่เหลี่ยม */
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .exercise-box:hover {
+            background-color: #e3f2fd; /* สีฟ้าอ่อนเมื่อชี้ */
+            border-color: #007bff;
+            transform: translateY(-3px); /* ขยับขึ้นนิดนึงให้ดูมีมิติ */
+        }
+        
+        .icon { font-size: 1.5em; display: block; margin-bottom: 5px; }
+
+        /* --- ส่วนเมนูขวา --- */
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .menu-list a {
+            text-decoration: none; 
+            color: #333;
+            padding: 12px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .menu-list a:hover {
+            background-color: #007bff; 
+            color: white;              
+            padding-left: 15px;        
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="main-content">
+            <h1>📝 Exercise (แบบฝึกหัด)</h1>
+            <p>Web Programming (Week1-8)</p>
+            <hr>
+
+            <div class="exercise-grid">
+                <a href="work1.html" class="exercise-box">
+                    <span class="icon">📄</span>
+                    <strong>Work 1</strong><br>
+                    <span style="font-size: 0.8em; color: gray;">HTML</span>
+                </a>
+
+                <a href="work2.html" class="exercise-box">
+                    <span class="icon">📄</span>
+                    <strong>Work 2</strong><br>
+                    <span style="font-size: 0.8em; color: gray;">HTML</span>
+                </a>
+
+                <a href="work3.html" class="exercise-box">
+                    <span class="icon">📄</span>
+                    <strong>Work 3</strong><br>
+                    <span style="font-size: 0.8em; color: gray;">HTML</span>
+                </a>
+
+                <a href="work4.html" class="exercise-box">
+                    <span class="icon">📄</span>
+                    <strong>Work 4</strong><br>
+                    <span style="font-size: 0.8em; color: gray;">HTML</span>
+                </a>
+
+                <a href="work5.html" class="exercise-box">
+                    <span class="icon">📄</span>
+                    <strong>Work 5</strong><br>
+                    <span style="font-size: 0.8em; color: gray;">HTML</span>
+                </a>
+
+                <a href="work6.html" class="exercise-box">
+                    <span class="icon">📄</span>
+                    <strong>Work 6</strong><br>
+                    <span style="font-size: 0.8em; color: gray;">HTML</span>
+                </a>
+
+                <a href="work7.html" class="exercise-box">
+                    <span class="icon">📄</span>
+                    <strong>Work 7</strong><br>
+                    <span style="font-size: 0.8em; color: gray;">CSS</span>
+                </a>
+
+                <a href="work8.html" class="exercise-box">
+                    <span class="icon">📄</span>
+                    <strong>Work 8</strong><br>
+                    <span style="font-size: 0.8em; color: gray;">HTML</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="right-sidebar">
+            <h3>📂 เมนูหลัก (Main Menu)</h3>
+            <div class="menu-list">
+                <a href="index.html">🏠 Home</a>
+                <a href="portfolio.html">💼 Portfolio</a>
+                <a href="exercise.html">📝 Exercise</a>
+                <a href="contact.html">📞 Contact</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

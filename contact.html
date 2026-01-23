@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ติดต่อเท็น</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS หลัก (Theme เดิม) */
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5; 
+        }    
+        .container {
+            display: flex;       
+            max-width: 1000px;   
+            margin: 0 auto;      
+            background-color: white; 
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }      
+        .main-content {
+            flex: 3;             
+            padding: 30px;
+        }     
+        .right-sidebar {
+            flex: 1;             
+            background-color: #f8f9fa; 
+            padding: 20px;
+            border-left: 1px solid #ddd; 
+        }      
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #007bff;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        /* --- ส่วน CSS เฉพาะหน้า Contact --- */
+        .contact-info {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .contact-item {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+        .contact-item span { margin-right: 10px; font-size: 1.3em; }
+
+        /* ตกแต่งฟอร์ม (Form Styles) */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label { margin-top: 10px; font-weight: bold; color: #555; }
+        
+        input, textarea {
+            width: 100%; /* ให้กว้างเต็มกล่อง */
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Sarabun', sans-serif;
+            box-sizing: border-box; /* สำคัญ: ป้องกัน padding ดันกล่องพัง */
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #007bff; /* เปลี่ยนสีขอบเมื่อพิมพ์ */
+            box-shadow: 0 0 5px rgba(0,123,255,0.3);
+        }
+
+        button.btn-submit {
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button.btn-submit:hover {
+            background-color: #0056b3;
+        }
+
+        /* --- ส่วนเมนูขวา --- */
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .menu-list a {
+            text-decoration: none; 
+            color: #333;
+            padding: 12px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .menu-list a:hover {
+            background-color: #007bff; 
+            color: white;              
+            padding-left: 15px;        
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="main-content">
+            <h1>📞 Contact (ติดต่อฉัน)</h1>
+            <hr>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span> Rungwikai3125@email.com
+                </div>
+                <div class="contact-item">
+                    <span>📱</span> 097-360-0600
+                </div>
+                <div class="contact-item">
+                    <span>💬</span> Line ID: 095-257-7890
+                </div>
+            </div>
+
+            <h3>✉️ ส่งข้อความถึงฉัน</h3>
+            <form action="#" method="post"> <label for="name">ชื่อ-นามสกุล:</label>
+                <input type="text" id="name" name="name" placeholder="ระบุชื่อของคุณ" required>
+
+                <label for="email">อีเมลติดต่อกลับ:</label>
+                <input type="email" id="email" name="email" placeholder="ระบุEmailของคุณ" required>
+
+                <label for="message">ข้อความ:</label>
+                <textarea id="message" name="message" rows="5" placeholder="พิมพ์ข้อความที่ต้องการติดต่อ..." required></textarea>
+
+                <button type="submit" class="btn-submit">ส่งข้อความ 🚀</button>
+            </form>
+
+        </div>
+
+        <div class="right-sidebar">
+            <h3>📂 เมนูหลัก (Main Menu)</h3>
+            <div class="menu-list">
+                <a href="index.html">🏠 Home</a>
+                <a href="portfolio.html">💼 Portfolio</a>
+                <a href="exercise.html">📝 Exercise</a>
+                <a href="contact.html">📞 Contact</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

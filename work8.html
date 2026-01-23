@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work 1 - HTML Profile</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- CSS หลัก (Main Layout) --- */
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5; 
+        }    
+        .container {
+            display: flex;       
+            max-width: 1000px;   
+            margin: 0 auto;      
+            background-color: white; 
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+            min-height: 80vh; /* ให้ความสูงอย่างน้อย 80% ของหน้าจอ */
+        }      
+        .main-content {
+            flex: 3;             
+            padding: 30px;
+        }     
+        .right-sidebar {
+            flex: 1;             
+            background-color: #f8f9fa; 
+            padding: 20px;
+            border-left: 1px solid #ddd; 
+        }      
+        
+        /* --- CSS เฉพาะหน้าส่งงาน (Work Page) --- */
+        .work-container {
+            background-color: #e6f2ff; /* พื้นหลังสีฟ้าอ่อน */
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #cce5ff;
+        }
+
+        h2.work-title {
+            margin-top: 0;
+            color: #000;
+            font-size: 1.6rem;
+        }
+
+        .level-tag {
+            color: #ff4d4d;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        h3.topic {
+            color: #0066cc;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        /* จัดรูปแบบรายการโจทย์ให้สวยงาม */
+        ul.instruction-list {
+            padding-left: 20px;
+            line-height: 1.8;
+            color: #333;
+        }
+        ul.instruction-list li {
+            margin-bottom: 10px;
+        }
+
+        /* ตกแต่งชื่อแท็ก (เช่น <h1>) ให้เหมือน Code */
+        code {
+            background-color: #fff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-family: monospace;
+            color: #d63384; /* สีชมพูเข้มแบบ Code */
+            font-weight: bold;
+        }
+
+        /* รูปภาพผลลัพธ์ */
+        .preview-img {
+            width: 100%;
+            max-width: 350px; /* ปรับขนาดให้พอดีตา */
+            height: auto;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            margin: 15px 0;
+            display: block;
+            border-radius: 5px;
+        }
+
+        /* ลิงก์และปุ่ม */
+        .link-section {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .link-section a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px solid #000;
+        }
+        .link-section a:hover {
+            color: #0056b3;
+            border-bottom-color: #0056b3;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: #fff9c4; 
+            border: 1px solid #fbc02d;
+            padding: 12px 25px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-back:hover {
+            background-color: #fff176;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* --- เมนูขวา --- */
+        .menu-list { display: flex; flex-direction: column; gap: 10px; }
+        .menu-list a {
+            text-decoration: none; color: #333; padding: 12px;
+            background-color: white; border: 1px solid #ccc;
+            border-radius: 5px; transition: 0.3s;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .menu-list a:hover {
+            background-color: #007bff; color: white; padding-left: 15px; border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="main-content">
+            
+            <div class="work-container">
+                <h2 class="work-title">Ex8: HTML : สร้างหน้าโปรไฟล์ส่วนตัวอย่างง่าย </h2>
+                <div class="level-tag">Level: Beginner</div>
+
+                <h3 class="topic">โจทย์</h3>
+                
+                <ul class="instruction-list">
+                    <li>ต้องมีหัวข้อหลักของหน้า (เช่น "หน้าโปรไฟล์ของฉัน") โดยใช้แท็ก <code>&lt;h1&gt;</code></li>
+                    <li>ต้องแสดงชื่อของคุณโดยใช้แท็ก <code>&lt;h2&gt;</code></li>
+                    <li>ต้องมีย่อหน้าสำหรับแนะนำตัวเองสั้นๆ โดยใช้แท็ก <code>&lt;p&gt;</code></li>
+                    <li>ต้องมีรายการงานอดิเรกของคุณโดยใช้รายการที่ไม่มีลำดับ (unordered list, <code>&lt;ul&gt;</code> และ <code>&lt;li&gt;</code>) อย่างน้อย 3 รายการ</li>
+                    <li>ต้องมีรายการทักษะของคุณโดยใช้รายการที่มีลำดับ (ordered list, <code>&lt;ol&gt;</code>และ <code>&lt;li&gt;</code>) อย่างน้อย 3 รายการ</li>
+                    <li>ต้องมีรูปภาพแสดงตัวอย่าง (เช่น รูปโปรไฟล์) โดยใช้แท็ก <code>&lt;img&gt;</code>(สามารถใช้ URL รูปภาพ placeholder ได้)</li>
+                    <li>ต้องมีลิงก์ไปยังเว็บไซต์โปรดของคุณ (หรือโซเชียลมีเดีย) โดยใช้แท็ก <code>&lt;a&gt;</code></li>
+                </ul>
+
+                <h3 class="topic">รูปผลลัพธ์</h3>
+                <img src="week8.png" alt="ตัวอย่างผลลัพธ์" class="preview-img">
+                <p style="font-size: 0.9em; color: gray; margin-top: -10px;"></p>
+
+                <div class="link-section">
+                    Output (หน้าผลลัพธ์): 
+                    <a href="https://rungwikai.github.io/week8/" target="_blank">https://rungwikai.github.io/week8/</a>
+                </div>
+                
+                <div class="link-section">
+                    Source codes :
+                    <a href="https://github.com/Rungwikai/week8.git" target="_blank">https://github.com/Rungwikai/week8.git</a>
+                </div>
+
+                <a href="exercise.html" class="btn-back">กลับไปหน้ารวมแบบฝึกหัด</a>
+            </div>
+
+        </div>
+
+        <div class="right-sidebar">
+            <h3>📂 เมนูหลัก (Main Menu)</h3>
+            <div class="menu-list">
+                <a href="index.html">🏠 Home</a>
+                <a href="portfolio.html">💼 Portfolio</a>
+                <a href="exercise.html">📝 Exercise</a>
+                <a href="contact.html">📞 Contact</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
