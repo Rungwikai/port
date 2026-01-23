@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rungwikrai Profile</title>
+    <title>Portfolio - ผลงานของเท็น</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- ตั้งค่าฟอนต์หลักทั้งหน้า --- */
+        /* ใช้ CSS ชุดเดียวกับหน้าแรก เพื่อให้ธีมเหมือนกัน */
         body {
             font-family: 'Sarabun', sans-serif;
             margin: 0;
@@ -34,66 +34,46 @@
             border-left: 1px solid #ddd; 
         }      
         
-        /* จัดรูปภาพ */
-        img {
-            max-width: 200px; 
-            border-radius: 10px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* เพิ่มเงาให้รูปนิดนึง */
-            margin-bottom: 10px;
-        }        
-
-        /* --- ปรับแต่งฟอนต์เมนูขวา (ตามที่ขอ) --- */
-        
-        /* 1. หัวข้อ "เมนูหลัก" */
-        .right-sidebar h3 {
-            font-family: 'Sarabun', sans-serif;
-            font-size: 1.1rem;      /* ขนาดกำลังดี */
-            font-weight: 700;       /* ตัวหนา */
-            color: #000;
-            margin-top: 0;
-            margin-bottom: 15px;
-            display: flex;          /* จัดไอคอนให้อยู่แนวเดียวกับตัวหนังสือ */
-            align-items: center;
-            gap: 8px;               /* ระยะห่างไอคอน */
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #007bff;
+            display: inline-block;
+            padding-bottom: 10px;
         }
 
+        /* ตกแต่งกล่องผลงานเพิ่มเติม */
+        .project-card {
+            border: 1px solid #eee;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        .project-card h3 { margin-top: 0; }
+
+        /* ส่วนเมนู */
         .menu-list {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
-
-        /* 2. ลิงก์เมนู */
         .menu-list a {
-            font-family: 'Sarabun', sans-serif; /* บังคับใช้ฟอนต์ Sarabun */
-            font-size: 1rem;
             text-decoration: none; 
             color: #333;
-            padding: 12px 15px;
+            padding: 12px;
             background-color: white;
             border: 1px solid #ccc;
             border-radius: 5px;
             transition: 0.3s;
-            
-            /* จัดไอคอนหน้าเมนู */
             display: flex;
-            align-items: center; 
-            gap: 10px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+            align-items: center;
+            gap: 10px;
         }
-
         .menu-list a:hover {
             background-color: #007bff; 
             color: white;              
-            padding-left: 20px;        
+            padding-left: 15px;        
             border-color: #0056b3;
-        }
-
-        /* เพิ่ม Class active สำหรับปุ่ม Home (เพราะหน้านี้คือหน้า Home) */
-        .menu-list a.active {
-            background-color: #007bff;
-            color: white;
-            border-color: #0056b3;
-            font-weight: bold;
         }
     </style>
 </head>
@@ -102,35 +82,31 @@
     <div class="container">
 
         <div class="main-content">
-            <h1>Rungwikrai Rungrueang</h1>
-
-            <img src="Profile.jpg" alt="รูปภาพโปรไฟล์ของฉัน">
-
-            <h3>เกี่ยวกับฉัน</h3>
-            <p>สวัสดีครับ ผมชื่อเท็น เป็นนักศึกษาที่กำลังศึกษาอยู่ที่ มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม สาขาเทคโนโลยีสารสนเทศครับ</p>
-
+            <h1>💼 Portfolio (ผลงานของฉัน)</h1>
+            <p>รวมผลงานที่น่าสนใจในระหว่างการศึกษา</p>
             <hr>
 
-            <h3>ทักษะและความสนใจ</h3>
-            <ul>
-                <li>การเขียน HTML และ CSS พื้นฐาน</li>
-                <li>การถ่ายภาพ</li>
-                <li>ชอบดื่มชาเขียว</li>
-            </ul>
+            <div class="project-card">
+                <h3>1. เว็บไซต์แนะนำตัวเอง</h3>
+                <p>เป็นโปรเจกต์แรกที่ฝึกเขียน HTML และ CSS เพื่อสร้างหน้าโปรไฟล์ส่วนตัว</p>
+                </div>
 
-            <h3>สื่อที่ชอบดู</h3>
-            <ul>
-                <li>
-                    <a href="https://www.youtube.com" target="_blank">YouTube</a>
-                </li>
-            </ul>
+            <div class="project-card">
+                <h3>2. การตัดต่อวิดีโอหนังสั้น</h3>
+                <p>ผลงานรายวิชานิเทศศาสตร์ เรื่องราวเกี่ยวกับการท่องเที่ยวในมอ.</p>
+            </div>
+            
+            <div class="project-card">
+                <h3>3. ภาพถ่ายกิจกรรมคณะ</h3>
+                <p>รวมภาพถ่ายกิจกรรมรับน้องและกิจกรรมกีฬาภายใน</p>
+            </div>
+
         </div>
 
         <div class="right-sidebar">
             <h3>📂 เมนูหลัก (Main Menu)</h3>
-            
             <div class="menu-list">
-                <a href="index.html" class="active">🏠 Home</a>
+                <a href="index.html">🏠 Home</a>
                 <a href="portfolio.html">💼 Portfolio</a>
                 <a href="exercise.html">📝 Exercise</a>
                 <a href="contact.html">📞 Contact</a>
