@@ -14,6 +14,7 @@
             padding: 20px;
             background-color: #f0f2f5; 
         }    
+        
         .container {
             display: flex;       
             max-width: 1000px;   
@@ -21,60 +22,75 @@
             background-color: white; 
             border: 1px solid #ddd;
             box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+            border-radius: 8px;
+            overflow: hidden; 
         }      
+        
         .main-content {
             flex: 3;             
-            padding: 30px;
+            padding: 40px;
         }     
+        
         .right-sidebar {
             flex: 1;             
             background-color: #f8f9fa; 
-            padding: 20px;
+            padding: 30px;
             border-left: 1px solid #ddd; 
+            min-width: 250px; 
         }      
         
         
         img {
             max-width: 200px; 
+            width: 100%;       
+            height: auto;
             border-radius: 10px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
-            margin-bottom: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+            object-fit: cover;
         }        
-       
+
+        
+        h1 { margin-top: 0; color: #222; }
+        h3 { color: #444; margin-bottom: 15px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+        
+        
+        ul { padding-left: 20px; color: #333; }
+        li { margin-bottom: 8px; }
+
+        
         .right-sidebar h3 {
             font-family: 'Sarabun', sans-serif;
-            font-size: 1.1rem;      
-            font-weight: 700;       
+            font-size: 1.1rem;
+            font-weight: 700;
             color: #000;
             margin-top: 0;
-            margin-bottom: 15px;
-            display: flex;          
+            margin-bottom: 20px;
+            display: flex;
             align-items: center;
-            gap: 8px;               
+            gap: 10px;
         }
 
         .menu-list {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
         }
 
-        
         .menu-list a {
-            font-family: 'Sarabun', sans-serif; 
+            font-family: 'Sarabun', sans-serif;
             font-size: 1rem;
             text-decoration: none; 
             color: #333;
             padding: 12px 15px;
             background-color: white;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            transition: 0.3s;
-            
-            
+            border-radius: 6px;
+            transition: all 0.2s ease;
             display: flex;
             align-items: center; 
-            gap: 10px; 
+            gap: 12px;
         }
 
         .menu-list a:hover {
@@ -82,14 +98,61 @@
             color: white;              
             padding-left: 20px;        
             border-color: #0056b3;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        
         .menu-list a.active {
             background-color: #007bff;
             color: white;
             border-color: #0056b3;
             font-weight: bold;
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                flex-direction: column; 
+            }
+
+            .main-content {
+                padding: 25px; 
+            }
+            
+            
+            .right-sidebar {
+                border-left: none;         
+                border-top: 1px solid #ddd; 
+                padding: 25px;
+                background-color: #fafafa;
+            }
+
+           
+            img {
+                display: block;
+                margin: 0 auto 20px auto;
+                max-width: 250px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+
+            
+            .menu-list a {
+                padding: 15px;
+                font-size: 1.05rem;
+                justify-content: center;
+            }
+            
+            .right-sidebar h3 {
+                justify-content: center; 
+            }
         }
     </style>
 </head>
